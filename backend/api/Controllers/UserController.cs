@@ -1,3 +1,4 @@
+using api.Controllers.Helpers;
 using api.DTOs;
 using api.Interfaces;
 using api.Models;
@@ -8,9 +9,7 @@ using MongoDB.Driver;
 
 namespace api.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-public class UserController(IUserRepository userRepository) : ControllerBase
+public class UserController(IUserRepository userRepository) : BaseApiController
 {
     [HttpPost("register")] // List<AppUser> appUsers = await _collection.Find(new BsonDocument()).ToListAsync(cancellationToken);
     public async Task<ActionResult<LoggedInDto>> Register(AppUser userInput, CancellationToken cancellationToken)
