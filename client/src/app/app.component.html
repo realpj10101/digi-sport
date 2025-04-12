@@ -1,0 +1,45 @@
+<form>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" [formControl]="EmailCtrl" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" [formControl]="PasswordCtrl" matInput>
+    </mat-form-field>
+
+    <button (click)="showFormValue()" mat-flat-button>Register</button>
+</form>
+
+
+
+
+
+
+
+<!-- <button (click)="showNumberInConole()">Show number in console</button>
+<h1>{{numbers}}</h1>
+<h1>{{names}}</h1> -->
+
+<!-- 
+<button mat-flat-button (click)="showNumber(12)">Show Number</button>
+<h1>{{number}}</h1>
+
+<button mat-raised-button (click)="calcAge()">Calc Age</button>
+<h1>{{age}}</h1> -->
+
+
+<!-- method with parameter -->
+<!-- <button (click)="mohasebeSen(4, 10)">Jame Sen</button>
+    <h1>{{age}}</h1>
+
+    <button (click)="jomleBesaz('parsa', 18)">Jomle besaz</button>
+    <h1>Esm man {{name}} ast va {{num}} sen daram.</h1> -->
+
+<!-- method basic -->
+    <!-- <h1>{{adad}}</h1>
+    <button (click)="jamSen()">Sen ro jam kon</button>
+    <br>
+    <button (click)="showName()">Show Name</button>
+    <h2>{{name}}</h2> -->
